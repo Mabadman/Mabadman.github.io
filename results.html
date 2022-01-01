@@ -46,11 +46,11 @@
             var background = new Image();
             background.onload = function() {
                 var c = document.createElement("canvas");
-                c.width = 1850;
+                c.width = 1500;
                 c.height = 1600;
                 var ctx = c.getContext("2d");
                 ctx.fillStyle = "#EEEEEE"
-                ctx.fillRect(0, 0, 1850, 1600);
+                ctx.fillRect(0, 0, 1500, 1600);
                 ctx.drawImage(background, 0, 0);
     
                 var dot = c.getContext("2d");
@@ -76,7 +76,7 @@
 <!--                ctx.fillText("Prog / Con Axis (z): " + z_axis, 725, 1525) -->
                 ctx.textAlign="right"
                 ctx.font="60px Montserrat"
-                ctx.fillText("THE SEX COMPASS", 1820, 1560)
+                ctx.fillText("THE SEX COMPASS", 725, 1560)
     
                 document.getElementById("banner").src = c.toDataURL();
             }
